@@ -44,7 +44,17 @@ def collatConjecture(n):
 
 print(collatConjecture(6))
 
-# solve later without sorting
+# solve later
 # 5. Second Largest
 #   def secondLargest(values):
+
+# 7. Palindrome Checker
+def palindromeChecker(numberList):
+      last = len(numberList) - 1
+      for i in range(len(numberList) // 2):
+        if numberList[i] != numberList[last - i]:
+            return False
+      return True
+
+print(palindromeChecker([4,3,4,3,4]))
 
