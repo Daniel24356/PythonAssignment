@@ -58,3 +58,7 @@ def palindromeChecker(numberList):
 
 print(palindromeChecker([4,3,4,3,4]))
 
+# solve later
+# 8. Count Digits Without String Conversion
+# def countDigitsWithoutConv():
+
