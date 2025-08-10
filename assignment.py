@@ -9,4 +9,14 @@ def digitClassifier(number):
     else:
         print("Odd")
 
-digitClassifier(9)  
+digitClassifier(9) 
+
+# 2. Reverse Engineering
+def reverseEngineering(number):
+    reversedNum = 0
+    number = abs(number)
+    while number > 0:
+        reversedNum = reversedNum * 10 + number % 10
+        number //= 10
+    return reversedNum
+print(reverseEngineering(1234))
