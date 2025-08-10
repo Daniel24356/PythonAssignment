@@ -1,10 +1,10 @@
 #1. Digit Classifier
 def digitClassifier(number):
-    if(number == 0):
+    if (number == 0):
         print("Zero")
-    elif(number%2 == 0 and number%3 == 0):
+    elif (number%2 == 0 and number%3 == 0):
         print("Even and divisible by 3")   
-    elif(number%2 == 0):
+    elif (number%2 == 0):
         print("Even")
     else:
         print("Odd")
@@ -15,7 +15,7 @@ digitClassifier(9)
 def reverseEngineering(number):
     reversedNum = 0
     number = abs(number)
-    while number > 0:
+    while (number > 0):
         reversedNum = reversedNum * 10 + number % 10
         number //= 10
     return reversedNum
@@ -25,7 +25,7 @@ print(reverseEngineering(1234))
 def listCompression(values):
     result = []
     for value in values:
-        if value % 2 == 0:
+        if (value % 2 == 0):
             result.append(value * 2)
     return result
 
@@ -35,7 +35,7 @@ print(listCompression([2,3,4,5,6]))
 def collatConjecture(n):
     steps = 0
     while n != 1:
-        if n % 2 == 0:
+        if (n % 2 == 0):
             n //= 2
         else:
             n = 3 * n + 1
@@ -51,7 +51,7 @@ print(collatConjecture(6))
 # 6. Missing Number in Sequence
 def missingNumInSeq(values):
     for i in range(len(values) - 1):  
-        if values[i+1] - values[i] != 1:
+        if (values[i+1] - values[i] != 1):
             return values[i] + 1
     return None 
          
@@ -61,7 +61,7 @@ print(missingNumInSeq([1,2,3,4,5,6,7,9]))
 def palindromeChecker(numberList):
       last = len(numberList) - 1
       for i in range(len(numberList) // 2):
-        if numberList[i] != numberList[last - i]:
+        if (numberList[i] != numberList[last - i]):
             return False
       return True
 
