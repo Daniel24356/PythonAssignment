@@ -43,3 +43,8 @@ def collatConjecture(n):
     return steps
 
 print(collatConjecture(6))
+
+# solve later without sorting
+# 5. Second Largest
+#   def secondLargest(values):
+
