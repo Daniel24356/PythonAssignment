@@ -53,3 +53,8 @@ def assignIdtoUniqWord(sentence):
 
 
 print(assignIdtoUniqWord('the cat sat on the mat'))
+
+#1
+#dont understand question
+# def word_ladder(start, end, dictionary):
+
